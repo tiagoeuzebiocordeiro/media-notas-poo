@@ -74,6 +74,6 @@ public class Progama {
 		System.out.println("Matrícula = " + aluno3.getMatricula());
 		System.out.println("Média das notas = " + aluno3.getMediaNota());
 		System.out.println("Resultado final = " + aluno3.getAlunoAprovado());
-
+		System.out.println();
 	}
 }
