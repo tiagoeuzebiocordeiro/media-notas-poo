@@ -6,9 +6,10 @@ public class Progama {
 
 	public static void main(String[] args) {
 
-		
-		/* Instanciação de objetos, com referencia as variaveis aluno1, aluno2 e aluno3 */
-		 
+		/*
+		 * Instanciação de objetos, com referencia as variaveis aluno1, aluno2 e aluno3
+		 */
+
 		Aluno aluno1 = new Aluno();
 		Aluno aluno2 = new Aluno();
 		Aluno aluno3 = new Aluno();
@@ -74,6 +75,5 @@ public class Progama {
 		System.out.println("Matrícula = " + aluno3.getMatricula());
 		System.out.println("Média das notas = " + aluno3.getMediaNota());
 		System.out.println("Resultado final = " + aluno3.getAlunoAprovado());
-		System.out.println();
 	}
 }

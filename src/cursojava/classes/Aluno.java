@@ -11,7 +11,6 @@ public class Aluno {
 	double nota3;
 	double nota4;
 	double mediaNota;
-	
 
 	public String getNome() {
 		return nome;
@@ -76,15 +75,15 @@ public class Aluno {
 	public void setNota4(double nota4) {
 		this.nota4 = nota4;
 	}
-	
-	public Aluno() { /*Criação dos dados na memória*/
-		
+
+	public Aluno() { /* Criação dos dados na memória */
+
 	}
-	
+
 	public double getMediaNota() {
 		return (nota1 + nota2 + nota3 + nota4) / 4.0;
 	}
-	
+
 	public String getAlunoAprovado() {
 		if (this.getMediaNota() >= 50) {
 			if (this.getMediaNota() >= 70) {
