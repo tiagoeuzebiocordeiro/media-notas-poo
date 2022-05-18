@@ -11,6 +11,7 @@ public class Aluno {
 	double nota3;
 	double nota4;
 	double mediaNota;
+	
 
 	public String getNome() {
 		return nome;
@@ -76,15 +77,29 @@ public class Aluno {
 		this.nota4 = nota4;
 	}
 
-	public Aluno() { /* Criação dos dados na memória */
-
+	/*Teste - instanciando um objeto com parametros inicializados [Aluno 4]*/
+	public Aluno(String nomeParametro, int idadeParametro, String cpfParametro, int matriculaParametro, double nota1Parametro, double nota2Parametro, double nota3Parametro, double nota4Parametro) { /* Criação dos dados na memória */
+		
+		nome = nomeParametro;
+		idade = idadeParametro;
+		cpf = cpfParametro;
+		matricula = matriculaParametro;
+		nota1 = nota1Parametro;
+		nota2 = nota2Parametro;
+		nota3 = nota3Parametro;
+		nota4 = nota4Parametro;
+		
 	}
 
-	public double getMediaNota() {
+	public Aluno() { /*Memória*/
+		
+	}
+
+	public double getMediaNota() { /*Cai aqui dentro para calcular a média (retorna um valor), metodo GET*/
 		return (nota1 + nota2 + nota3 + nota4) / 4.0;
 	}
 
-	public String getAlunoAprovado() {
+	public String getAlunoAprovado() { /*Cai aqui dentro para mostrar o resultado (retorna uma string), metodo GET*/
 		if (this.getMediaNota() >= 50) {
 			if (this.getMediaNota() >= 70) {
 				return "Aprovado";
